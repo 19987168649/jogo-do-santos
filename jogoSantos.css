@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.jogo {
+  background-image: url(/Fundo.jpg);
+  background-size: cover;
+  width: 60vw;
+  height: 60vh;
+  margin: 0 auto;
+  position: relative;
+  overflow: hidden;
+}
+.b {
+  position: absolute;
+  width: 100px;
+  bottom: 0;
+  right: 0;
+}
+@keyframes lado {
+  0% {
+    right: -100px;
+  }
+  60% {
+    right: 400px;
+  }
+  100% {
+    right: 120%;
+  }
+}
+#baleia {
+  position: absolute;
+  bottom: 0;
+
+  width: 150px;
+}
+@keyframes pulo {
+  0% {
+    bottom: 0;
+  }
+  10% {
+    /* rotate: -45deg; */
+  }
+  30% {
+    bottom: 300px;
+    rotate: 0deg;
+  }
+  50% {
+  }
+  80% {
+    /* rotate: 45deg; */
+  }
+  100% {
+    /* rotate: 0deg; */
+    bottom: 0;
+  }
+}
+.pulo {
+  animation: pulo 1s linear;
+}
+.final {
+  left: 150px;
+  animation: none;
+}
+.reiniciar {
+  border-radius: 5px;
+  border: solid 2px black;
+  background-color: red;
+  bottom: 0 auto;
+  color: rgb(0, 0, 0);
+  width: 100px;
+  height: 20px;
+}
+.inicia {
+  animation: lado 3s linear infinite;
+}
+.perdeu {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+}
+h1 {
+  font-size: 80px;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  color: rgb(255, 0, 0);
+}
+button {
+  width: 100px;
+  background-color: transparent;
+  border: 0cm;
+}
+.button {
+  width: 100px;
+}
