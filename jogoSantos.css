@@ -4,7 +4,7 @@ body {
   box-sizing: border-box;
 }
 .jogo {
-  background-image: url(/Fundo.jpg);
+  background-image: url(Fundo.jpg);
   background-size: cover;
   width: 60vw;
   height: 60vh;
